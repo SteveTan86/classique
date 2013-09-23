@@ -1,0 +1,266 @@
+@mixin threedeetext($color) {
+  color: $color;
+  text-shadow:
+    0 1px 0 darken($color, 14%),
+    0 2px 0 darken($color, 16%),
+    1px 4px 15px rgba(0,0,0,0.1),
+    1px 4px 5px rgba(0,0,0,0.3);
+}
+
+html {
+    background-color: #fbfbfb;
+}
+
+body {
+    background-color: transparent;
+
+    & > header.row {
+        margin-top: 20px;
+
+        & > div.profile {
+            width: 250px;
+            height: 250px;
+            background: $primary-color no-repeat;
+
+            margin: 0 auto;
+
+            @media #{$screen} {
+                border-radius: 50%;
+                box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                transition: all 2s ease-in-out;
+
+                &:hover, &:active {
+                    @include rotateY(180deg);
+                }
+            }
+        }
+
+        & > h1.site-title {
+            text-align: center;
+
+            & > a {
+                transition: text-shadow 0.25s linear;
+            }
+
+            &:hover, &:active {
+                & > a {
+                    @include threedeetext($primary-color);
+                }
+            }
+        }
+
+        & > nav.nav-bar {
+            margin: {
+                top: 10px;
+                bottom: 20px;
+            }
+
+            &:before, &:after {
+                display: block;
+                content: ' ';
+                height: 2px;
+                background-color: $primary-color;
+
+                // IE9 SVG, needs conditional override of 'filter' to 'none'
+                $experimental-support-for-svg: true;
+                @include background(linear-gradient(45deg, lighten($primary-color,70%), $primary-color, lighten($primary-color,70%)));
+            }
+
+            & > ul {
+                list-style-type: none;
+                text-align: center;
+
+                & > li {
+                    display: inline-block;
+                    margin: {
+                        top: 22px;
+                        bottom: 22px;
+                    }
+
+                    & > a {
+                        font-size: large;
+                        font-weight: bold;
+                        transition: text-shadow 0.25s linear;
+
+                        padding: {
+                            top: 22px;
+                            bottom: 22px;
+                        }
+                    }
+
+                    &:hover, &:active {
+                        & > a {
+                            @include threedeetext($primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & > div.row > div.content {
+
+        /* Article */
+        article, section {
+
+            /* Header */
+            & > header {
+                /* Title */
+                & > h2.title {
+                    text-align: center;
+                }
+
+                & > h3.title {
+                    text-align: center;
+                }
+
+                & > p.date {
+                    text-align: center;
+                    font: {
+                        weight: bold;
+                        style: italic;
+                    }
+                }
+
+                & > .title > a {
+                    transition: text-shadow 0.25s linear;
+
+                    &:hover, &:active {
+                        color: darken($primary-color,20%);
+                        @include threedeetext($primary-color);
+                    }
+                }
+            }
+
+            & > p {
+                font-size: large;
+            }
+
+            & > footer {
+                    margin: {
+                    top: 20px;
+                    bottom: 20px;
+                }
+
+                &:before {
+                    display: block;
+                    content: ' ';
+                    height: 2px;
+                    background-color: $primary-color;
+
+                    // IE9 SVG, needs conditional override of 'filter' to 'none'
+                    $experimental-support-for-svg: true;
+                    @include background(linear-gradient(45deg, lighten($primary-color,70%), $primary-color, lighten($primary-color,70%)));
+                }
+
+                & > ul.tags {
+                    list-style-type: none;
+                    padding: 10px 0;
+
+                    & > li {
+                        display: inline-block;
+
+                        & > a.rounded.button {
+                            @media #{$screen} {
+                                border-radius: emCalc(7);
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Blockquote */
+            blockquote * {
+                font: {
+                    size: x-large !important;
+                    style: italic !important;
+                    weight: bold !important;
+                }
+                text-align: center;
+            }
+
+            /* Code */
+            pre {
+                @include panel(lighten($primary-color, 40%));
+                border: none;
+
+                code {
+                    color: $primary-color;
+                    font-family: 'Source Code Pro', sans-serif;
+                    font-weight: 600;
+                }
+            }
+
+            /* Lists */
+            ul, ol {
+                padding: emCalc(9, 20, 0, 38);
+            }
+        }
+    }
+
+    & > footer.row {
+        margin-top: 20px;
+
+        a {
+            color: $secondary-color;
+            transition: text-shadow 0.25s linear;
+
+            &:hover, &:active {
+                color: darken($secondary-color,20%);
+                @include threedeetext($secondary-color);
+            }
+        }
+
+        & > p {
+            text-align: center;
+            font: {
+                size: small;
+                weight: bold;
+                style: italic;
+            }
+
+            &:before {
+                display: block;
+                content: ' ';
+                height: 2px;
+                background-color: $primary-color;
+
+                // IE9 SVG, needs conditional override of 'filter' to 'none'
+                $experimental-support-for-svg: true;
+                @include background(linear-gradient(45deg, lighten($primary-color,70%), $primary-color, lighten($primary-color,70%)));
+            }
+        }
+    }
+
+    .paper {
+        position: relative;
+        @include panel(white);
+        border: none;
+
+        &:before, &:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 12px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            box-shadow: 0 12px 10px darken(white,20%);
+            @include rotate(-3deg);
+        }
+
+        &:after {
+          // -webkit-transform: rotate(3deg);
+          // -moz-transform: rotate(3deg);
+          // -o-transform: rotate(3deg);
+          // -ms-transform: rotate(3deg);
+          // transform: rotate(3deg);
+          //
+            @include rotate(3deg);
+            right: 10px;
+            left: auto;
+        }
+    }
+}

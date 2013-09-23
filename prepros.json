@@ -1,0 +1,295 @@
+{
+  "id": "691a3dc1",
+  "name": "stevetan.me | classique",
+  "files": [
+    {
+      "id": "f50be59e",
+      "pid": "691a3dc1",
+      "name": "foundation.abide.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.abide.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.abide.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "7f1f96ed",
+      "pid": "691a3dc1",
+      "name": "foundation.alerts.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.alerts.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.alerts.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "8e402741",
+      "pid": "691a3dc1",
+      "name": "foundation.clearing.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.clearing.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.clearing.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "48508010",
+      "pid": "691a3dc1",
+      "name": "foundation.cookie.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.cookie.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.cookie.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "57772613",
+      "pid": "691a3dc1",
+      "name": "foundation.forms.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.forms.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.forms.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "a4bbca68",
+      "pid": "691a3dc1",
+      "name": "foundation.dropdown.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.dropdown.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.dropdown.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "00df70e2",
+      "pid": "691a3dc1",
+      "name": "foundation.interchange.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.interchange.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.interchange.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "1f7eae0e",
+      "pid": "691a3dc1",
+      "name": "foundation.joyride.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.joyride.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.joyride.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "28cf95fc",
+      "pid": "691a3dc1",
+      "name": "foundation.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "63136dd9",
+      "pid": "691a3dc1",
+      "name": "foundation.magellan.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.magellan.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.magellan.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "c5a6bf49",
+      "pid": "691a3dc1",
+      "name": "foundation.orbit.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.orbit.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.orbit.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "0cd61533",
+      "pid": "691a3dc1",
+      "name": "foundation.placeholder.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.placeholder.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.placeholder.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "5f6e91ed",
+      "pid": "691a3dc1",
+      "name": "foundation.reveal.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.reveal.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.reveal.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "1532eb69",
+      "pid": "691a3dc1",
+      "name": "foundation.section.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.section.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.section.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "1c861b51",
+      "pid": "691a3dc1",
+      "name": "foundation.tooltips.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.tooltips.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.tooltips.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "cb3cd5af",
+      "pid": "691a3dc1",
+      "name": "foundation.topbar.js",
+      "type": "JS",
+      "input": "js\\foundation\\foundation.topbar.js",
+      "output": "js\\foundation\\{{jsMinPath}}\\foundation.topbar.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
+    },
+    {
+      "id": "fd7c82e1",
+      "pid": "691a3dc1",
+      "name": "style.scss",
+      "input": "sass\\style.scss",
+      "output": "{{cssPath}}\\style.css",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "debug": false,
+        "compass": true,
+        "fullCompass": true,
+        "compassConfigRb": true,
+        "outputStyle": "expanded",
+        "autoprefixer": false,
+        "autoprefixerBrowsers": ""
+      },
+      "type": "Scss"
+    }
+  ],
+  "imports": [
+    {
+      "id": "b1628501",
+      "pid": "691a3dc1",
+      "path": "sass\\_normalize.scss",
+      "parents": [
+        "fd7c82e1"
+      ]
+    },
+    {
+      "id": "1855f516",
+      "pid": "691a3dc1",
+      "path": "sass\\_custom.scss",
+      "parents": [
+        "fd7c82e1"
+      ]
+    },
+    {
+      "id": "05068a8f",
+      "pid": "691a3dc1",
+      "path": "sass\\_settings.scss",
+      "parents": [
+        "fd7c82e1"
+      ]
+    }
+  ],
+  "config": {
+    "liveRefresh": true,
+    "liveRefreshDelay": 0,
+    "filterPatterns": "",
+    "useCustomServer": true,
+    "customServerUrl": "http://blog.dev.net",
+    "cssPath": "css",
+    "jsPath": "js",
+    "htmlPath": "html",
+    "jsMinPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpExcludePatterns": "",
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}
