@@ -4,6 +4,10 @@
 	{{ site_title() }}
 @stop
 
+@section('url')
+{{ Wardrobe::route('index') }}
+@stop
+
 @section('content')
     <article>
     	@foreach ($posts as $post)

@@ -25,8 +25,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>@yield('title')</title>
+    {{-- @todo Figure out a way to get post object to pass us a SEO description --}}
+    <!-- <meta name="description" content=""> -->
 
+    <!--============================================================
+     *  Facebook
+     ============================================================-->
+    <meta property="fb:app_id" content="425937027510514" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="@yield('url')" />
+    <meta property="og:image" content="{{ asset(theme_path('img/profile.png')) }}" />
+    <meta property="og:title" content="@yield('title')" />
+    {{-- @todo Figure out a way to get post object to pass us a SEO description --}}
+    <!-- <meta property="og:description" content=""/> -->
 
+    <!--============================================================
+     *  Google+
+     ============================================================-->
+    <link rel="author" href="https://plus.google.com/112925121377826190761"/>
 
     <!--============================================================
      *  Favicon Madness!
@@ -47,15 +63,26 @@
     <!-- or, set /favicon.ico for IE10 win -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset(theme_path('img/favicons/apple-touch-icon-144x144-precomposed.png')) }}">
-    <!--============================================================-->
-
 
     <!--============================================================
      *  A dash of style!
      ============================================================-->
     <link href="{{ asset(theme_path('css/style.css')) }}" rel="stylesheet">
     <script src="{{ asset(theme_path('js/vendor/custom.modernizr.js')) }}"></script>
-    <!--============================================================-->
+
+    <!--============================================================
+     *  Google Analytics
+     ============================================================-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44222156-2', 'stevetan.me');
+      ga('send', 'pageview');
+    </script>
+
   </head>
   <body>
 
@@ -86,11 +113,13 @@
       <p class="small-12 small-offset-0 large-8 large-offset-2 column">Powered by <a href="http://wardrobecms.com">Wardrobe</a>&nbsp;,&nbsp;&copy; 2013 Steve Tan. All Rights Reserved.</p>
     </footer>
 
+    @section('js')
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ asset(theme_path('js/foundation/foundation.min.js')) }}"></script>
     <script src="{{ asset(theme_path('js/foundation/foundation.topbar.min.js')) }}"></script>
     <script>
       $(document).foundation();
     </script>
+    @show
   </body>
 </html>

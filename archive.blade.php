@@ -5,6 +5,10 @@
     {{ "Archives | ".site_title() }}
 @stop
 
+@section('url')
+{{ Wardrobe::route('posts.archive') }}
+@stop
+
 @section('content')
     <article>
         <header>

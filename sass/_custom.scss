@@ -14,6 +14,15 @@ html {
 body {
     background-color: transparent;
 
+    a {
+        color: $secondary-color;
+        transition: text-shadow 0.25s linear;
+
+        &:hover, &:active {
+            @include threedeetext($secondary-color);
+        }
+    }
+
     & > header.row {
         margin-top: 20px;
 
@@ -39,11 +48,10 @@ body {
             text-align: center;
 
             & > a {
+                color: $primary-color;
                 transition: text-shadow 0.25s linear;
-            }
 
-            &:hover, &:active {
-                & > a {
+                &:hover, &:active {
                     @include threedeetext($primary-color);
                 }
             }
@@ -78,6 +86,7 @@ body {
                     }
 
                     & > a {
+                        color: $primary-color;
                         font-size: large;
                         font-weight: bold;
                         transition: text-shadow 0.25s linear;
@@ -86,13 +95,12 @@ body {
                             top: 22px;
                             bottom: 22px;
                         }
-                    }
 
-                    &:hover, &:active {
-                        & > a {
+                        &:hover, &:active {
                             @include threedeetext($primary-color);
                         }
                     }
+
                 }
             }
         }
@@ -105,12 +113,9 @@ body {
 
             /* Header */
             & > header {
-                /* Title */
-                & > h2.title {
-                    text-align: center;
-                }
 
-                & > h3.title {
+                /* Title */
+                & > h2.title, & > h3.title {
                     text-align: center;
                 }
 
@@ -123,6 +128,7 @@ body {
                 }
 
                 & > .title > a {
+                    color: $primary-color;
                     transition: text-shadow 0.25s linear;
 
                     &:hover, &:active {

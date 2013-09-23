@@ -5,6 +5,10 @@
 	{{ $post->title." | ".site_title() }}
 @stop
 
+@section('url')
+{{ Wardrobe::route('posts.show',$post->slug) }}
+@stop
+
 @section('content')
     <article>
         <section class="paper">
