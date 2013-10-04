@@ -10,9 +10,17 @@
 
 @section('content')
     <article>
-    	@foreach ($posts as $post)
-    		@include(theme_view('inc.post'))
-    	@endforeach
+        <header>
+            <h2 class="title">Recently...</h2>
+        </header>
+        <section class="paper">
+            <ul class="archive">
+                @foreach (Wardrobe::posts(array('per_page' => 10)) as $post)
+                <li>
+                  <span><i class="icon-calendar">&nbsp;</i>{{ date("M d, Y", strtotime($post['publish_date'])) }}</span> - <strong><a href="{{ wardrobe_url('/post/'.$post['slug']) }}">{{ $post['title'] }}</a></strong>
+                </li>
+                @endforeach
+            </ul>
+        </section>
     </article>
-    {{ $posts->links() }}
 @stop

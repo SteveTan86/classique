@@ -22,10 +22,15 @@
                 <h2 class="title">Archives</h2>
             @endif
         </header>
-
-        @foreach ($posts as $post)
-            @include(theme_view('inc.post'))
-        @endforeach
+        <section class="paper">
+            <ul class="archive">
+              @foreach ($posts as $post)
+                <li>
+                  <span><i class="icon-calendar">&nbsp;</i>{{ date("M d, Y", strtotime($post['publish_date'])) }}</span> - <strong><a href="{{ wardrobe_url('/post/'.$post['slug']) }}">{{ $post['title'] }}</a></strong>
+                </li>
+              @endforeach
+            </ul>
+        </section>
     </article>
     {{ $posts->links() }}
 @stop

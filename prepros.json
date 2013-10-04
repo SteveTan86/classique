@@ -245,6 +245,20 @@
         "autoprefixerBrowsers": ""
       },
       "type": "Scss"
+    },
+    {
+      "id": "b24ccca0",
+      "pid": "691a3dc1",
+      "name": "lte-ie7.js",
+      "type": "JS",
+      "input": "js\\lte-ie7.js",
+      "output": "js\\{{jsMinPath}}\\lte-ie7.min.js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "autoprefixerBrowsers": ""
+      }
     }
   ],
   "imports": [

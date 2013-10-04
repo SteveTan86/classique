@@ -142,6 +142,10 @@ body {
                 font-size: large;
             }
 
+            ul.archive {
+                list-style: none;
+            }
+
             & > footer {
                     margin: {
                     top: 20px;
@@ -199,7 +203,7 @@ body {
 
             /* Lists */
             ul, ol {
-                padding: emCalc(9, 20, 0, 38);
+                padding: emCalc(9), emCalc(20), emCalc(0), emCalc(38);
             }
         }
     }
